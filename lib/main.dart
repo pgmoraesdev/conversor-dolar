@@ -7,15 +7,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Conversor de Dolar',
       theme: ThemeData(        
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Conversor de Real para Dolar'),
     );
   }
 }
@@ -47,24 +46,28 @@ class _MyHomePageState extends State<MyHomePage> {
    
     return Scaffold(
       appBar: AppBar(
-        
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        
-        title: Text(widget.title),
+        title: Text(widget.title,textAlign: .justify),
+        centerTitle: true,     
       ),
       body: Center(
-        child: Column(          
-          mainAxisAlignment: .center,
+        child: Column(                          
+          mainAxisAlignment: .center,                                   
+          crossAxisAlignment: .center,
+          
           children: [
             TextField(
               controller: value,
               decoration: InputDecoration(
-                labelText: "Teste"
-              )
+                labelText: "Valor em REAL",
+                alignLabelWithHint: true,
+                floatingLabelAlignment: FloatingLabelAlignment.center,
+              ),
+              textAlign: .center,
             ),        
             Text(
-              '${_finalValue.toStringAsFixed(2)}',
+              "DOLAR: ${_finalValue.toStringAsFixed(2)}",
               style: Theme.of(context).textTheme.headlineMedium,
+              textAlign: .start,
             ),
             ElevatedButton(
               onPressed: () => {
