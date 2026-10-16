@@ -1,3 +1,9 @@
+# 2TDSPR - FIAP
+RM568580- Paulo Gustavo Moraes de Sousa
+RM566621 - Luana Alves de Oliveira
+RM566603 - Isabelly Marques da Silva
+RM566630 - Mateus Ribeiro de Azevedo
+
 # Conversor de Real para Dólar 💵
 
 Projeto simples desenvolvido em Flutter para converter valores de reais (BRL) para dólares (USD).
