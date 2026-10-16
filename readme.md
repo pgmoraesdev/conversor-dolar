@@ -1,17 +1,37 @@
-# conversor_dolar
+# Conversor de Real para Dólar 💵
 
-A new Flutter project.
+Projeto simples desenvolvido em Flutter para converter valores de reais (BRL) para dólares (USD).
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- Inserir um valor em reais.
+- Converter o valor para dólares ao clicar no botão **Calcular**.
+- Exibir o resultado da conversão na tela.
 
-A few resources to get you started if this is your first Flutter project:
+## Como funciona?
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+O usuário informa o valor em reais no campo de texto e clica em **Calcular**. O aplicativo divide o valor informado pela cotação do dólar definida no código, atualmente em R$ 5,60, e exibe o resultado em dólares.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias utilizadas
+
+- Flutter
+- Dart
+- Material Design
+
+## Conceitos praticados
+
+- `StatefulWidget` e `setState()` para atualizar o resultado na tela.
+- `TextField` para receber o valor digitado.
+- Funções para realizar o cálculo da conversão.
+- `ElevatedButton` para executar a conversão.
+
+## Como executar
+
+1. Instale o Flutter.
+2. Clone ou baixe este repositório.
+3. Execute `flutter pub get`.
+4. Execute `flutter run`.
+
+## Observação
+
+A cotação do dólar é fixa e definida diretamente no código, não sendo atualizada automaticamente.

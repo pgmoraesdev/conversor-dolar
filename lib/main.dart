@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,     
       ),
       body: Center(
-        child: Column(                          
+        child: Column(
           mainAxisAlignment: .center,                                   
           crossAxisAlignment: .center,
           
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )            
           ],
         ),
-      ),      
+      ),
     );
   }
 }
